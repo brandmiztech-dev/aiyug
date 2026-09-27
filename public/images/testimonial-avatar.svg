@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="256" cy="256" r="195" />
+    </clipPath>
+  </defs>
+  
+  <!-- Outer Blue Circle -->
+  <circle cx="256" cy="256" r="195" fill="#1d6df7" />
+  
+  <!-- Shadow cast inside circle -->
+  <g clip-path="url(#circleClip)">
+    <path 
+      d="M256 120 C220 120 200 148 200 185 C200 205 208 220 216 230 C206 242 165 265 165 295 L450 580 L490 350 Z" 
+      fill="#1250d4" 
+      opacity="0.85" 
+    />
+  </g>
+  
+  <!-- Crisp White Silhouette with accurate head, neck, and shoulders -->
+  <g fill="#ffffff">
+    <!-- Head -->
+    <path d="M256 120 C220 120 198 146 198 185 C198 224 220 248 256 248 C292 248 314 224 314 185 C314 146 292 120 256 120 Z" />
+    <!-- Neck & Shoulders -->
+    <path d="M256 265 C226 265 224 250 224 250 C185 272 158 310 158 355 C158 360 162 365 167 365 L345 365 C350 365 354 360 354 355 C354 310 327 272 288 250 C288 250 286 265 256 265 Z" />
+  </g>
+</svg>
